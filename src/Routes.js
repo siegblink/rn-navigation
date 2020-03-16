@@ -1,13 +1,10 @@
 import React from 'react'
 import { ActivityIndicator, AsyncStorage } from 'react-native'
-import { createStackNavigator } from '@react-navigation/stack'
 import { NavigationContainer } from '@react-navigation/native'
 import { AuthContext } from './AuthProvider'
 import Center from './common/Center'
 import AppTabs from './AppTabs'
 import AuthStack from './AuthStack'
-
-const Stack = createStackNavigator()
 
 export default function Routes() {
   const { user, login } = React.useContext(AuthContext)
